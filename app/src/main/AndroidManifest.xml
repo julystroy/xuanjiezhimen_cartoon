@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jssj.jiangye">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/deskhead"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".module.MainActivity"
+                  android:launchMode="singleTask"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MainTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="mopian.tv"
+                    android:pathPrefix="/pursue"
+                    android:scheme="night"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".module.someui.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Full_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.detail.StarInfoDetailActivity"/>
+
+        <activity android:name=".module.user.NameEditActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.detail.ReadNovelActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.user.UserInfoEditActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.someui.LoginActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/LoginTheme"/>
+        <activity android:name=".module.someui.LicenseActivity"/>
+        <activity android:name=".module.detail.StarHotDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.detail.ArticalReadDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.main.mine.mymessage.MyMessageActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.someui.ReadNovelListActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.main.mine.PackageActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".module.main.mine.StoreActivity"
+                  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".module.someui.ComposeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".module.user.SexSelectActivity"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity"
+                  android:screenOrientation="portrait"
+            />
+
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"
+                  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/itemiv_hot_star"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/item_hot_star_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/star_hot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text="XX凡饰宁缺"/>
+        <TextView
+            android:id="@+id/star_hot_charm_num"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="魅力值：12000"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/star_top_desc"
+        android:text="我不得不将我对青春的失望铺平二环东路的机车还在艰难的前行我只是停靠在角落渺小的生命若干年后的我回望当初的你"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/icon_narrow_right"/>
+</LinearLayout>
+
+
+        <!--<ImageView
+            android:id="@+id/send_flower"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"/>-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

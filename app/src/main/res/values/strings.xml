@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">将夜</string>
+
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">还没有数据哦</string>
+    <string name="loading">请稍后...</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+    <string name="tab_home">主页</string>
+    <string name="tab_action">活动</string>
+    <string name="tab_book">书友圈</string>
+    <string name="tab_mine">我的</string>
+    <string name="home_cartoon">卡通</string>
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="big_event">大事件</string>
+    <string name="tab_starts">星影</string>
+    <string name="information">资讯</string>
+    <string name="store">店铺</string>
+    <string name="my_package">背包</string>
+    <string name="my_task">任务</string>
+    <string name="my_message">我的消息</string>
+    <string name="my_download">我的下载</string>
+    <string name="user_feedback">反馈</string>
+    <string name="clear_cache">清楚缓存</string>
+    <string name="my_upadte">更新</string>
+    <string name="edit_Name">资料编辑</string>
+    <string name="back">返回</string>
+    <string name="editname_desc">昵称只能用汉字，不能用其他特殊字符和字母，不超过十个汉字，不可重复。  每周可以更改一次昵称，周一刷新次数，或到店铺购买改名卡。</string>
+    <string name="subscrib">提交</string>
+    <string name="delete">删除</string>
+    <string name="fab_vertical_behavior">com.jssj.jiangye.widget.behavior.LFabVerticalBehavior</string>
+    <string name="title_view_behavior">com.jssj.jiangye.widget.behavior.LTitleBehavior</string>
+    <string name="tab_charm">魅力榜</string>
+    <string name="send">发帖</string>
+    <string name="repat_verification">重新发送</string>
+    <string name="tv_latest">最火</string>
+    <string name="tv_news">最新</string>
+    <string name="prop">道具</string>
+    <string name="bottom_view_behavior">com.jssj.jiangye.widget.behavior.LBottomBehavior</string>
+</resources>

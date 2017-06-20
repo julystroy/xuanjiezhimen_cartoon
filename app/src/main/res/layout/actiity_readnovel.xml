@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_back"
+    android:clipToPadding="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_heiht"
+            android:background="@color/main_color"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_behavior="@string/title_view_behavior"
+            app:contentInsetStart="0dp"
+            >
+<com.jssj.jiangye.widget.NormalTitleBar
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+    <include layout="@layout/layout_read_textsize_set"/>
+
+    <include layout="@layout/layout_home_head"/>
+</android.support.design.widget.CoordinatorLayout>
